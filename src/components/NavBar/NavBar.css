@@ -3,22 +3,18 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    border-top: solid 10px rgb(106, 20, 206);
+   
 }
 
 li {
     display: inline-block;
     margin: 15px;
     cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
+    border-width: 1px;
+    border-style: solid ;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 7px 13px 37px black;
-    font-family: cursive;
-}
-
-h1 {
-    color: rgb(99, 99, 212);
-    font-style: oblique;
-    margin-left: 1rem;
+    box-shadow: 7px 13px 37px gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

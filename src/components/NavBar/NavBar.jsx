@@ -1,23 +1,42 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
+    const imgAcuario = "./img/logo.webp"
     return (
         <header>
-            <h1>Acuario Pablo´s</h1>
+            <Link to={"/"}>
+                <img className="imgAcuario" src={imgAcuario} alt='Logo Acuario' />
+            </Link>
 
-            <nav>
-                <ul>
-                    <li>Aireadores</li>
-                    <li>Tratamiento Para Peces</li>
-                    <li>Filtros</li>
-                    <li>Calefactores</li>
-                    <li>Peceras</li>
-                    <li>Piedras</li>
-                </ul>
-            </nav>
+            <ul>
+                <li>
+                    <NavLink to={`/categoria/1`}> Aireadores </NavLink>
+                </li>
 
-            <CartWidget/>
+                <li>
+                    <NavLink to={`/categoria/2`}> Pecera </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to={`/categoria/3`}> Filtros </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to={`/categoria/4`}> Piedras </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to={`/categoria/5`}> Tratamientos Para Peces </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to={`/categoria/6`}> Calentador </NavLink>
+                </li>
+            </ul>
+
+            <CartWidget />
 
         </header>
     )
